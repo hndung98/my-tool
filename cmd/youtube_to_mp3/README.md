@@ -3,7 +3,7 @@ This tool can transform a youtube video url to mp3 file
 
 # Installation
 
-- Install Chocolatey using Powershell (admin)
+- To install Chocolatey using Powershell (admin)
 
 ```
 Set-ExecutionPolicy Bypass -Scope Process -Force; `
@@ -22,10 +22,10 @@ choco install ffmpeg
 
 To check version: `ffmpeg -v`
 
-- Install py package
+- To install py package
 
 ```
 pip install yt-dlp
 ```
 
-- Run bat file
+- Running the bat file
