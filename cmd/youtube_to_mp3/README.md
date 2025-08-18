@@ -20,7 +20,7 @@ To check version: `choco -v`
 choco install ffmpeg
 ```
 
-To check version: `ffmpeg -v`
+To check version: `ffmpeg -version`
 
 - To install py package
 
