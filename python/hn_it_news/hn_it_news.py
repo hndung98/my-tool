@@ -10,16 +10,14 @@ KEYWORDS = [
     "programming",
     "developer",
     "software",
+    "http",
     "AI",
     "cloud",
     "database",
     "linux",
-    "reactjs",
-    "nextjs",
-    "nodejs",
-    "nestjs",
+    "js",  # reactjs, nextjs, nodejs, nestjs
 ]
-MAX_STORIES = 50
+MAX_STORIES = 100
 OUTPUT_FOLDER = "./downloads"
 OUTPUT_FILE = "hn_it_news.txt"
 OUTPUT_FILE_PATH = OUTPUT_FOLDER + "/" + OUTPUT_FILE
@@ -43,7 +41,7 @@ def get_story_detail(story_id):
 
 
 def matches_keywords(title):
-    title_lower = title.lower()
+    title_lower = title.lower().replace(".", "")
     return any(re.search(rf"\b{kw.lower()}\b", title_lower) for kw in KEYWORDS)
 
 
